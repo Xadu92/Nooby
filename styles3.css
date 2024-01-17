@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Browood";
+}
+
+header {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/Foot.jpg);
+    background-size: cover;
+    height: 230vh;
+}
+
+h1 {
+    color: white;
+}
+
+
+
+
+/* NAV BAR CONFIG */
+
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+
+.navbar a {
+    color: white;
+    position: relative;
+    font-size: 20px;
+}
+
+.navbar a:after {
+    content: "";
+    position: absolute;
+    background-color: #deee05;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: 0px;
+    transition: 0.3s;
+    
+
+}
+
+
+.navbar a:hover::after {
+    width: 100%;
+
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+}
+
+
+.navbar .nav-links ul li.active a {
+    color: white;
+    font-weight: 600;
+}
+
+.navbar .nav-links ul li.active a:hover {
+    color: #deee05;
+    font-weight: 600;
+}
+
+.navbar .menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
+
+/* POUR MOBILE SCRIPT CSS */
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+    .navbar .menu-hamburger {
+
+        display: block;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.199);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+        
+    }
+    
+    .nav-links.mobile-menu {
+         margin-left: 0;
+
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* footer CONFIG */
+
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-right: 0;
+    padding: 0px 0px;
+    background-image: url(img/fondvalo.jpg);
+    
+}
+
+footer p {
+    color: aliceblue;
+}
+
+footer a {
+    color: #deee05;
+}
+
+footer h2 {
+    color: rgb(238, 255, 0);
+}
+
+footer a:hover {
+    color: #05eeee;
+}
+
+
+
+
+
+
+
+
+/* PAGE 2 */
+
+
+iframe {
+    margin-top: 150px;
+    margin-left: 20px;
+} 
+
+header h1 {
+    color: rgb(248, 6, 6);
+    background-color: aliceblue;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 0px;
+    font-style: italic;
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #062197;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, #0077ff, #0514e0);
+    border-radius: 10px;
+    
+
+}
